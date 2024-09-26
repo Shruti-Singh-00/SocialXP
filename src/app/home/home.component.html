@@ -1,23 +1,48 @@
   <app-header></app-header>
-  
-  <main class="main">
-  
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-      <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2>Kelly Adams</h2>
-            <p>I'm a professional illustrator from San Francisco</p>
-            <a routerLink="/about" class="btn-get-started">About Me</a>
-          </div>
-        </div>
+
+    <div class="row">
+      <div class="col-lg-6 col-xs-12 p-4" style="padding-left: 40px;">
+        <img src="assets/img/home/toggle2-Photo.jpg" class="img-fluid" style="height: 450px;">
       </div>
-    </section>
+    
+      <div class="col-lg-6 col-xs-12 bubble p-4 d-flex justify-content-center align-items-center">
+        <p class="ibrand hero-1 text-center" style="padding-right: 40px;">
+          Just like you control who sees your posts or sends you messages on social media, consent in real life operates similarly. You decide who gets access, when, and how much
+        </p>
+      </div>
+    
+
+    
     <!-- /Hero Section -->
+    <div class="row p-5" style="margin-bottom: -100px;">
+      <div class="col-lg-6 col-xs-12 p-5" style="padding-left: 40px; background-color: white;">
+        <p class="ibrand hero-2 p-4" style="font-size: 24px; color: #2D3142;"> <!-- added font-size style -->
+          When someone disregards those boundaries, it's like bypassing your privacy settings without permission
+          <span class="inter" style="font-size: 18px; color: #00B179;"> <!-- added font-size style -->
+            <strong>—it’s a violation.</strong>          
+          </span>
+        </p>         
+        <img src="assets/img/home/bubble-remove.png" class="img-fluid" style="height: 450px; width: auto;">
+      </div>
   
-  </main>
+      <div class="col-lg-6 col-xs-12 p-5" style="background-color: white;">
+        <p class="ibrand hero-2 p-4" style="font-size: 24px; color: #2D3142;"> <!-- added font-size style -->
+          Consent Ed teaches you to communicate your boundaries clearly and ensures others respect them
+          <span class="inter" style="font-size: 18px; color: #00B179;"> <!-- added font-size style -->
+          <strong>—just like respecting someone’s privacy online.</strong>
+          </span>
+        </p>          
+        <img src="assets/img/home/privacy.png" class="img-fluid" style="height: 400px; width: auto;">
+      </div>
+
+
+  <app-about id="about"></app-about>
+
+  <app-team id="team"></app-team>
+
+  <app-blog id="blog"></app-blog>
+
+  <app-contact id="contact"></app-contact>
 
   <app-footer></app-footer>
   
@@ -26,4 +51,5 @@
   
   <!-- Preloader -->
   <!-- <div id="preloader"></div> -->
+</div>
   

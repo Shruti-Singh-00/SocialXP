@@ -22,7 +22,7 @@
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
   color: var(--contrast-color);
-  background-color: var(--accent-color);
+  background-color: #00B179;
 }
 
 .portfolio .portfolio-filters li:first-child {

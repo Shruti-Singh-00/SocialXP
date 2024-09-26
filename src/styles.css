@@ -1,4 +1,28 @@
 /* Fonts */
+
+body::-webkit-scrollbar { display: none;}
+
+body{
+  background-color: #EDF6F9 !important;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-family{
+  font-family:ibrand;
+  src:url(ibrand.otf);
+}
+
+.ibrand{
+  font-family: ibrand;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 :root {
     --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --heading-font: "Raleway",  sans-serif;
@@ -18,7 +42,7 @@
   /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
   :root {
     --nav-color: #444444;  /* The default color of the main navmenu links */
-    --nav-hover-color: #34b7a7; /* Applied to main navmenu links when they are hovered over or active */
+    --nav-hover-color: #00B179; /* Applied to main navmenu links when they are hovered over or active */
     --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
     --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
     --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */

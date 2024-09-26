@@ -1,10 +1,8 @@
-<app-header></app-header>
-  
-  <main class="main">
+<main class="main">
     <section id="portfolio" class="portfolio section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Blog</h2>
+        <p>Read Aishwarya’s insights on why consent education is more critical than ever.</p>
       </div>
   
       <div class="container">
@@ -19,7 +17,7 @@
   
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
             <div *ngFor="let item of portfolioItems" [ngClass]="item.filter" class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img [src]="item.image" class="img-fluid" alt="">
+              <a href="/details"><img [src]="item.image" class="img-fluid" alt=""></a>
               <div class="portfolio-info">
                 <h4>{{ item.title }}</h4>
                 <p>{{ item.description }}</p>
@@ -33,8 +31,6 @@
       </div>
     </section>
   </main>
-  
-  <app-footer></app-footer>
   
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <!-- <div id="preloader"></div> -->

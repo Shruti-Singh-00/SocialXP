@@ -1,0 +1,39 @@
+.image{
+    padding: 10px 50px 10px 50px;
+    background-color: #EDF6F9;
+}
+
+.hero-1{
+    color: #2D3142; 
+    font-size: xx-large !important; 
+    letter-spacing: 1.5px !important;
+    font-weight: 300 !important;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.hero-2{
+    color: #2D3142; 
+    font-size: xx-larger !important; 
+    letter-spacing: 1.5px !important;
+    font-weight: 200 !important;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.toggle{
+    text-align: center;
+    color: #00B179;
+    background-color: #EDF6F9;
+}
+
+.bubble{
+    text-align: center;
+    background-color: #EDF6F9;
+}
+
+.bubble p{
+    font-size: larger;
+}
