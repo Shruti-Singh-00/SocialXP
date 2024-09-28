@@ -1,0 +1,44 @@
+body{
+    background:#3C3C3C;
+    color:#fff;
+  }
+  
+  h1, p{
+   font-family:'Montserrat';
+  }
+  
+  h1{
+    font-size:62px;
+  }
+  
+  p{
+    font-size:26px;
+    font-weight:bold;
+    text-transform:uppercase;
+  }
+  
+  
+  /*CONTENT*/
+  .content{
+    margin:5% auto;
+    width:fit-content;
+  }
+  
+  .subcontent{
+    height:50px;
+    overflow:hidden;
+    position:relative;
+    
+  }
+  
+  .animated-text{
+    position:absolute;
+    animation: slide 15s infinite;
+  }
+  
+  @keyframes slide {
+    0%, 15%{ top: -16px; }
+    25%, 40%{ top: -74px; }
+    50%, 65%{ top:-132px; }
+    75%, 100%{ top:-190px; }
+  }

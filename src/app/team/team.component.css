@@ -1,188 +1,157 @@
+@import url("../contact/contact.component.css");
+@import url("../footer/footer.component.css");
+
 .about .content h2 {
-    font-weight: 700;
-    font-size: 24px;
-  }
-  
-  .about .content ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .about .content ul li {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .about .content ul strong {
-    margin-right: 10px;
-  }
-  
-  .about .content ul i {
-    font-size: 16px;
-    margin-right: 5px;
-    color: var(--accent-color);
-    line-height: 0;
-  }
-  
-  /* Timeline */
+  font-weight: 700;
+  font-size: 24px;
+}
 
-  .bg {
-    background: #EDF6F9;
-  }
-  
-  .main-timeline {
-    font-family: sans-serif;
-    position: relative;
-  }
-  
-  .main-timeline:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-  
-  .main-timeline .timeline {
-    width: 50%;
-    margin: 0 0 20px 20px;
-    float: right;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-  }
-  
-  .main-timeline .timeline-content {
-    color: #000;
-    background: #fff;
-    text-align: center;
-    min-height: 125px;
-    padding: 30px 20px 30px 45px;
-    border-radius: 15px;
-    border: 2px solid #000;
-    display: block;
-    position: relative;
-  }
-  
-  .main-timeline .timeline-content:hover {
-    text-decoration: none;
-  }
-  
-  .main-timeline .timeline-icon {
-    color: #fff;
-    background-color: #E29578;
-    font-size: 37px;
-    line-height: 65px;
-    height: 75px;
-    width: 75px;
-    border: 6px solid #fff;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-    left: -38px;
-    top: 50%;
-  }
-  
-  .main-timeline .timeline-icon:before,
-  .main-timeline .timeline-icon:after {
-    content: "";
-    background-color: #000;
-    height: 7px;
-    width: 7px;
-    border-radius: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    left: 50%;
-    top: -12px;
-  }
-  
-  .main-timeline .timeline-icon:after {
-    top: calc(100% + 6px);
-  }
-  
-  .main-timeline .title {
-    color: #E29578;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0 0 5px;
-  }
-  
-  .main-timeline .description {
-    font-size: 1rem;
-    color: #777;
-    margin: 0;
-  }
-  
-  .main-timeline .timeline:nth-child(even) {
-    float: left;
-    margin: 0 20px 20px 0;
-  }
-  
-  .main-timeline .timeline:nth-child(even) .timeline-content {
-    padding: 30px 45px 30px 20px;
-  }
-  
-  .main-timeline .timeline:nth-child(even) .timeline-icon {
-    right: -39px;
-    left: auto;
-  }
-  
-  .main-timeline .timeline:nth-child(4n + 2) .timeline-icon {
-    background-color: #2D3142;
-  }
-  .main-timeline .timeline:nth-child(4n + 2) .title {
-    color: #2D3142;
-  }
-  
-  .main-timeline .timeline:nth-child(4n + 3) .timeline-icon {
-    background-color: #00B179;
-  }
-  .main-timeline .timeline:nth-child(4n + 3) .title {
-    color: #00B179;
-  }
-  
-  .main-timeline .timeline:nth-child(4n + 4) .timeline-icon {
-    background-color: #02affe;
-  }
-  .main-timeline .timeline:nth-child(4n + 4) .title {
-    color: #02affe;
-  }
-  
-  @media screen and (max-width: 767px) {
-    .main-timeline .timeline {
-      width: 100%;
-      padding-top: 40px;
-    }
-  
-    .main-timeline .timeline .timeline-content,
-    .main-timeline .timeline:nth-child(even) .timeline-content {
-      padding: 45px 20px 20px;
-    }
-  
-    .main-timeline .timeline .timeline-icon,
-    .main-timeline .timeline:nth-child(even) .timeline-icon {
-      font-size: 28px;
-      left: 50%;
-      top: -39px;
-      right: auto;
-      transform: translateY(0) translateX(-50%);
-    }
-  
-    .main-timeline .timeline .timeline-icon:before,
-    .main-timeline .timeline .timeline-icon:after {
-      top: 50%;
-      left: -12px;
-      transform: translateY(-50%) translateX(0);
-    }
-  
-    .main-timeline .timeline .timeline-icon:after {
-      left: calc(100% + 6px);
-    }
-  }
-  
-  @media screen and (max-width: 576px) {
-    .main-timeline .title {
-      font-size: 18px;
-    }
-  }
-  
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
 
-  
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--accent-color);
+  line-height: 0;
+}
+
+.circle {
+  padding: 13px 20px;
+  border-radius: 50%;
+  background-color: #00B179;
+  color: #fff;
+  max-height: 50px;
+  z-index: 2;
+}
+
+.how-it-works .row .col-2 {
+  align-self: stretch;
+}
+
+.how-it-works .row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #00B179;
+  z-index: 1;
+}
+
+.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+
+.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+
+.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+
+.timeline hr {
+  border-top: 3px solid #00B179;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+
+.timeline .corner {
+  border: 3px solid #00B179;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
+
+.timeline .bottom-left{
+  left: -50%;
+  top: calc(50% - 3px);
+}
+
+/* Container for buttons */
+.button-container {
+  display: flex;
+  gap: 15px; /* Space between buttons */
+}
+
+/* Common styles for all buttons */
+.button {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #00B179;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: #00B179;
+  border-color: transparent;
+}
+
+.button:hover i{
+  color: #fff;
+}
+
+/* LinkedIn icon styles */
+.button img {
+  width: 20px;
+  height: 20px;
+  filter: invert(0); /* Set icon to black by default */
+  transition: filter 0.3s;
+}
+
+/* Change icon to white on hover */
+.button:hover img {
+  filter: invert(1);
+}

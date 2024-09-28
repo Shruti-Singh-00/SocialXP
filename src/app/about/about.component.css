@@ -30,7 +30,7 @@
   content: "";
   width: 2px;
   height: 100%;
-  background: #f6a4ec;
+  background: #f0c6b7;
   position: absolute;
   top: 0%;
   left: 50%;
@@ -43,7 +43,7 @@
   content: "";
   width: 100%;
   height: 2px;
-  background: #f6a4ec;
+  background: #f0c6b7;
   position: absolute;
   right: 0;
   z-index: -1;
@@ -57,7 +57,7 @@
   line-height: 1.4;
   text-transform: uppercase;
   font-weight: 600;
-  color: #9251ac;
+  color: #E29578;
   letter-spacing: 1.5px;
 }
 .timeline__event__content {
@@ -68,10 +68,10 @@
   border-radius: 0 6px 6px 0;
 }
 .timeline__event__date {
-  color: #f6a4ec;
+  color: #f0c6b7;
   font-size: 1.5rem;
   font-weight: 600;
-  background: #9251ac;
+  background: #E29578;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,11 +83,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #9251ac;
+  color: #E29578;
   padding: 20px;
   align-self: center;
   margin: 0 20px;
-  background: #f6a4ec;
+  background: #f0c6b7;
   border-radius: 100%;
   width: 40px;
   box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
@@ -102,7 +102,7 @@
   content: "";
   width: 2px;
   height: 100%;
-  background: #f6a4ec;
+  background: #f0c6b7;
   position: absolute;
   top: 0%;
   z-index: -1;
@@ -114,7 +114,7 @@
   content: "";
   width: 100%;
   height: 2px;
-  background: #f6a4ec;
+  background: #f0c6b7;
   position: absolute;
   left: 0%;
   z-index: -1;
@@ -126,24 +126,24 @@
   flex-basis: 60%;
 }
 .timeline__event--type2:after {
-  background: #555ac0;
+  background: #2D3142;
 }
 .timeline__event--type2 .timeline__event__date {
-  color: #87bbfe;
-  background: #555ac0;
+  color: #babcc2;
+  background: #2D3142;
 }
 .timeline__event--type2:nth-child(2n + 1) .timeline__event__icon:before, .timeline__event--type2:nth-child(2n + 1) .timeline__event__icon:after {
-  background: #87bbfe;
+  background: #babcc2;
 }
 .timeline__event--type2 .timeline__event__icon {
-  background: #87bbfe;
-  color: #555ac0;
+  background: #babcc2;
+  color: #2D3142;
 }
 .timeline__event--type2 .timeline__event__icon:before, .timeline__event--type2 .timeline__event__icon:after {
-  background: #87bbfe;
+  background: #babcc2;
 }
 .timeline__event--type2 .timeline__event__title {
-  color: #555ac0;
+  color: #2D3142;
 }
 .timeline__event--type3:after {
   background: #24b47e;

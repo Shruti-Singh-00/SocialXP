@@ -6,6 +6,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { TeamComponent } from './team/team.component';
 import { BlogComponent } from './blog/blog.component';
 import { DetailsComponent } from './details/details.component';
+import { TestComponent } from './test/test.component';
 
 export const routes: Routes = [
     {path:"team", component:TeamComponent},
@@ -14,6 +15,7 @@ export const routes: Routes = [
     {path:"blog", component:BlogComponent},
     {path:"about", component:AboutComponent},
     {path:"details", component: DetailsComponent},
+    {path:"test", component: TestComponent},
     {path: '', redirectTo: '/home', pathMatch: 'full' },
     {path: '**', component: NotFoundComponent}
 ];

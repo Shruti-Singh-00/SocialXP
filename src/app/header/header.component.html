@@ -1,4 +1,4 @@
-<header id="header" class="header d-flex align-items-center bgColor sticky-top">
+<!-- <header id="header" class="header d-flex align-items-center bgColor sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
   
       <a routerLink="/" class="d-flex align-items-center" style="padding-left: 40px;">
@@ -12,17 +12,30 @@
           <li><a href="{{'/home/#team'}}">Team</a></li>
           <li><a href="{{'/home/#blog'}}">Blog</a></li>
           <li><a href="{{'/home/#contact'}}">Contact</a></li>
-          <button type="submit" class="btn" style="margin-left: 25px;">Get Started</button>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
   
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-  
     </div>
+  </header> -->
+
+  <header class="mb-5">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/home" class="navbar-brand"><img src="assets/img/logo.png" class="img-fluid" alt="" width="200px"></a>
+      </div>
+      <ul class="nav-links inter">
+        <li class="nav-item"><a href="/home" routerLinkActive="active">Home</a></li>
+        <li class="nav-item"><a href="/home/#about">About</a></li>
+        <li class="nav-item"><a href="/home/#team">Team</a></li>
+        <li class="nav-item"><a href="/home/#blog">Blog</a></li>
+        <li class="nav-item" id="last"><a href="/home/#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+    
   </header>
