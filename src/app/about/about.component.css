@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -211,4 +211,7 @@
   100% {
     top: 100%;
  }
-}
+} */
+
+
+@import url("../home/home.component.css");
