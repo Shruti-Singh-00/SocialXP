@@ -1,10 +1,23 @@
 .image{
-    padding: 10px 50px 10px 50px;
+    margin: 30px 30px 10px 30px;
+    padding: 24px 24px 10px 24px;
     background-color: #EDF6F9;
+    height: 500px;
+}
+
+.image2{
+    padding: 30px;
+    padding-top: 50px;
+    height: 450px; 
+    width: auto;
 }
 
 .hero-1{
     color: #2D3142; 
+    padding-right: 50px; 
+    padding-top: 20px;
+    margin-top: 20px;
+    opacity: 0.8;
     font-size: xx-large !important; 
     letter-spacing: 1.5px !important;
     font-weight: 300 !important;
@@ -21,6 +34,7 @@
     display: flex;
     flex-direction: column;
     line-height: 1.2;
+    padding: 30px;
 }
 
 .toggle{
@@ -36,4 +50,59 @@
 
 .bubble p{
     font-size: larger;
+}
+
+.divPadd{
+    padding: 30px;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.divPadd2{
+    padding: 30px;
+    padding-left: 0%;
+    margin-bottom: -100px;
+}
+
+.txt{
+    font-size: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .image{
+        margin: 20px 75px 0px 80px;
+        height: 400px;
+    }
+
+    .image2{
+        height: 250px;
+        padding: 0%;
+    }
+
+    .hero-1{
+        padding: 20px 20px 10px 25px;
+        margin: 10px 10px 10px 25px;
+        font-size: x-large !important;
+    }
+
+    .hero-2{
+        padding: 0%;
+        padding-bottom: 25px;
+    }
+
+    .divPadd{
+        padding: 0%;
+        margin: 0%;
+        padding-bottom: 30px;
+    }
+
+    .padd{
+        padding: 20%;
+    }
+
+    .txt{
+        font-size: 15px !important;
+        padding: 0%;
+        margin: 0%;
+    }
 }

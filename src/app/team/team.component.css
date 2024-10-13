@@ -42,3 +42,33 @@
 .button:hover img {
   filter: invert(1);
 }
+
+.txt{
+  opacity: 0.7;
+}
+
+.txt2{
+  font-size: 40px; 
+  letter-spacing: 2px; 
+  font-weight: 100; 
+  color: #00B179;
+}
+
+.padd{
+  margin: 0px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .txt{
+    font-size: 13px;
+  }
+
+  .txt2{
+    font-size: x-large;
+  }
+
+  .padd{
+    padding: 0px;
+    margin-bottom: 5px;
+  }
+}

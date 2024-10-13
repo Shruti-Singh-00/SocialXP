@@ -761,13 +761,20 @@ body{
     background: color-mix(in srgb, var(--accent-color) 90%, white 20%);
   }
   
-  @media (max-width: 768px) {
+  @media (min-width: 481px) and (max-width: 768px) {
     .hero h2 {
       font-size: 32px;
     }
   
     .hero p {
       font-size: 18px;
+    }
+  }
+
+
+  @media (min-width: 320px) and (max-width: 480px) { 
+    body-padding{
+      padding: 0;
     }
   }
   
