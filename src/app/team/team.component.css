@@ -58,6 +58,11 @@
   margin: 0px;
 }
 
+.image{
+  padding-bottom: 20px;
+  padding-top: 100px;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .txt{
     font-size: 13px;
@@ -70,5 +75,9 @@
   .padd{
     padding: 0px;
     margin-bottom: 5px;
+  }
+
+  .image{
+    padding-top: 0px;
   }
 }
