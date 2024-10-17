@@ -1,44 +1,45 @@
-body{
-    background:#3C3C3C;
-    color:#fff;
+/* Styling for the content */
+.content-box {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation classes for sliding */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  
-  h1, p{
-   font-family:'Montserrat';
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  h1{
-    font-size:62px;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
   }
-  
-  p{
-    font-size:26px;
-    font-weight:bold;
-    text-transform:uppercase;
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  
-  /*CONTENT*/
-  .content{
-    margin:5% auto;
-    width:fit-content;
-  }
-  
-  .subcontent{
-    height:50px;
-    overflow:hidden;
-    position:relative;
-    
-  }
-  
-  .animated-text{
-    position:absolute;
-    animation: slide 15s infinite;
-  }
-  
-  @keyframes slide {
-    0%, 15%{ top: -16px; }
-    25%, 40%{ top: -74px; }
-    50%, 65%{ top:-132px; }
-    75%, 100%{ top:-190px; }
-  }
+}
+
+/* Initially off-screen */
+.slide-left, .slide-right {
+  opacity: 0;
+}
+
+/* Trigger animation when visible */
+.animate-left {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.animate-right {
+  animation: slideInFromRight 1s ease-out forwards;
+}
