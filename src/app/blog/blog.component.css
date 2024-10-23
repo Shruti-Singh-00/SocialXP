@@ -95,3 +95,13 @@
   opacity: 1;
   bottom: 0;
 }
+
+.Align{
+  padding: 10px 150px 80px 150px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .Align{
+    padding: 25px;
+  }
+}

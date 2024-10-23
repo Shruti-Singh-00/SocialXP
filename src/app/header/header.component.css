@@ -1,4 +1,9 @@
 /* header.component.css */
+.navDark{
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between; /* Align logo and nav-links at opposite ends */
@@ -14,11 +19,10 @@
   }
   
   /* For the logo */
-  .logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
+  .logo {
+    width: 230px;
+    padding-left: 24px;
+    margin-left: 24px;
   }
   
   /* Base styles for the nav-links */
@@ -80,8 +84,25 @@
     background-color: #333;
     margin: 4px 0;
   }
+
+  .theme-toggle svg{
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .theme-toggle svg:hover{
+    transform: scale(1.1);
+    transform: scale(1.1) rotate(10deg);
+  }
   
   /* Media query for mobile responsiveness */
+  @media (min-width: 320px) and (max-width: 480px) {
+    .logo{
+      padding-left: 15px;
+      margin-left: 15px;
+    }
+  }
+
   @media (max-width: 768px) {
     .nav-links {
       display: none; /* Hide the navigation links on mobile */

@@ -1,16 +1,14 @@
 
 .image{
-    margin: 30px 30px 10px 30px;
-    padding: 24px 24px 10px 24px;
     background-color: #EDF6F9;
-    height: 500px;
+    height: 360px;
 }
 
 .image2{
-    padding: 30px;
-    padding-top: 50px;
-    height: 450px; 
-    width: auto;
+  padding: 30px;
+  padding-left: 270px;
+  height: 260px; 
+  width: auto;
 }
 
 .hero-1{
@@ -19,8 +17,8 @@
     padding-top: 20px;
     margin-top: 20px;
     opacity: 0.8;
-    font-size: xx-large !important; 
-    letter-spacing: 1.5px !important;
+    font-size: 45px !important; 
+    letter-spacing: 1.2px !important;
     font-weight: 300 !important;
     display: flex;
     flex-direction: column;
@@ -31,11 +29,34 @@
     color: #2D3142; 
     font-size: xx-larger !important; 
     letter-spacing: 1.5px !important;
-    font-weight: 200 !important;
+    font-weight: 100 !important;
     display: flex;
     flex-direction: column;
     line-height: 1.2;
-    padding: 30px;
+    padding: 30px 150px 30px 150px; 
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #00B179;; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #00B179;; }
 }
 
 .toggle{
@@ -134,13 +155,13 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
     .image{
-        margin: 20px 75px 0px 80px;
-        height: 400px;
+        height: 230px;
     }
 
     .image2{
-        height: 250px;
+        height: 100px;
         padding: 0%;
+        padding-left: 5px;
     }
 
     .hero-1{
@@ -151,6 +172,7 @@
 
     .hero-2{
         padding: 0%;
+        padding-left: 20px;
         padding-bottom: 25px;
     }
 

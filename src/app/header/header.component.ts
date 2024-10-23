@@ -1,9 +1,11 @@
-import { Component, AfterViewInit, ElementRef, Renderer2 } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, Renderer2, inject } from '@angular/core';
+import { DarkModeService } from '../services/dark-mode.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
@@ -26,5 +28,14 @@ export class HeaderComponent implements AfterViewInit {
         }
       });
     }
+  }
+
+  navDark:any = "navDark";
+  navToggle: boolean= false;
+  darkModeService: DarkModeService = inject(DarkModeService);
+  toggleDarkMode(){
+    this.darkModeService.updateDarkMode();
+    this.navDark = 'null';
+    this.navToggle = true;
   }
 }

@@ -16,19 +16,25 @@
 }
 
 .manage3{
-    margin: 30px;
     font-size: 20px; 
     color: #2D3142; 
-    padding: 50px 150px 70px 150px; 
+    padding: 30px 150px 30px 150px; 
     opacity: 0.8;
 }
 
-.img{
-    height: 360px; 
+.imgAlign{
+    height: 300px; 
     width: auto;
+    padding: 30px;
+    padding-left: 15px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) { 
+    .imgAlign {
+        height: 200px;
+        width: 400px;
+    }
+
     .manage1{
         margin: 10px;
         font-size: 15px;
@@ -42,7 +48,7 @@
 
     .manage3{
         margin: 0px;
-        padding: 50px 10px 70px 10px; 
+        padding: 20px; 
         font-size: 15px;
     }
 

@@ -1,60 +1,10 @@
-<div class="container my-5">
-  <div class="row">
-    <!-- Left Div -->
-    <div #leftDiv class="col-6 d-flex justify-content-start left-div slide-left">
-      <div class="content-box">
-        <h2>Left Div</h2>
-        <p>This div slides from left to right on scroll.</p>
-      </div>
-    </div>
+<header>
+  <button (click)="toggleTheme()">
+    {{ isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode' }}
+  </button>
+</header>
 
-    <!-- Right Div -->
-    <div #rightDiv class="col-6 d-flex justify-content-end right-div slide-right">
-      <div class="content-box">
-        <h2>Right Div</h2>
-        <p>This div slides from right to left on scroll.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container my-5">
-  <div class="row">
-    <!-- Left Div -->
-    <div #leftDiv class="col-6 d-flex justify-content-start left-div slide-left">
-      <div class="content-box">
-        <h2>Left Div</h2>
-        <p>This div slides from left to right on scroll.</p>
-      </div>
-    </div>
-
-    <!-- Right Div -->
-    <div #rightDiv class="col-6 d-flex justify-content-end right-div slide-right">
-      <div class="content-box">
-        <h2>Right Div</h2>
-        <p>This div slides from right to left on scroll.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="container my-5">
-  <div class="row">
-    <!-- Left Div -->
-    <div #leftDiv class="col-6 d-flex justify-content-start left-div slide-left">
-      <div class="content-box">
-        <h2>Left Div</h2>
-        <p>This div slides from left to right on scroll.</p>
-      </div>
-    </div>
-
-    <!-- Right Div -->
-    <div #rightDiv class="col-6 d-flex justify-content-end right-div slide-right">
-      <div class="content-box">
-        <h2>Right Div</h2>
-        <p>This div slides from right to left on scroll.</p>
-      </div>
-    </div>
-  </div>
+<div>
+  <h1>Welcome to the Theme Switcher</h1>
+  <p>This is a sample paragraph to test the dark/light mode toggle.</p>
 </div>

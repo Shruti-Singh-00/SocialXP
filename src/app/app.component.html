@@ -1,1 +1,12 @@
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
+<div [attr.data-bs-theme]="darkModeService.darkModeSignal()">
+    <app-header></app-header>
+    <app-home></app-home>
+    <app-about id="about"></app-about>
+    <app-team id="team"></app-team>
+    <app-blog id="blog"></app-blog>
+    <app-contact id="contact"></app-contact>
+    <app-footer></app-footer>
+</div>
+
+
