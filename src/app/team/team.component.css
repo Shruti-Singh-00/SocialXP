@@ -1,5 +1,3 @@
-@import url("../contact/contact.component.css");
-@import url("../footer/footer.component.css");
 
 /* Container for buttons */
 .button-container {
@@ -90,6 +88,16 @@
   object-fit: cover;
 }
 
+.interTxt{
+  color: #2D3142; 
+    font-size: xx-larger !important; 
+    letter-spacing: 1.5px !important;
+    font-weight: 100 !important;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+}
+
 @keyframes cursor{
   50% { border-color: transparent;}
 }
@@ -136,5 +144,9 @@
   .corner{
     width: 350px;
     height: 350px;
+  }
+
+  .interTxt{
+    font-size: 14px;
   }
 }

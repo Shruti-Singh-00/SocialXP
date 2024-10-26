@@ -98,8 +98,10 @@
   /* Media query for mobile responsiveness */
   @media (min-width: 320px) and (max-width: 480px) {
     .logo{
+      width: 180px;
       padding-left: 15px;
       margin-left: 15px;
+      padding-right: -200px;
     }
   }
 
@@ -112,7 +114,7 @@
       left: 0;
       width: 100%;
       background-color: #EDF6F9;
-      padding: 0;
+      padding-left: -100px;
       margin: 0;
       border-top: 1px solid #ddd;
     }
