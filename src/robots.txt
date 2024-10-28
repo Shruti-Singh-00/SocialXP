@@ -1,0 +1,8 @@
+# *
+User-agent: *
+Allow: /
+Allow: /home
+Disallow: /404
+
+# Sitemaps
+Sitemap: https://www.socialxp.co/sitemap.xml
