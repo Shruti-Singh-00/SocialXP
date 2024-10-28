@@ -1,16 +1,13 @@
-
 .image{
     background-color: #EDF6F9;
     height: 360px;
 }
-
 .image2{
   padding: 30px;
   padding-left: 270px;
   height: 260px; 
   width: auto;
 }
-
 .hero-1{
     color: #2D3142; 
     padding-right: 50px; 
@@ -24,7 +21,6 @@
     flex-direction: column;
     line-height: 1.2;
 }
-
 .hero-2{
     color: #2D3142; 
     font-size: xx-larger !important; 
@@ -35,7 +31,6 @@
     line-height: 1.2;
     padding: 30px 150px 30px 150px; 
 }
-
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #00B179;; /* The typwriter cursor */
@@ -58,134 +53,59 @@
   from, to { border-color: transparent }
   50% { border-color: #00B179;; }
 }
-
 .toggle{
     text-align: center;
     color: #00B179;
     background-color: #EDF6F9;
 }
-
 .bubble{
     /* text-align: center; */
     background-color: #EDF6F9;
 }
-
 .bubble p{
     font-size: larger;
 }
-
 .divPadd{
     padding: 30px;
     margin-top: 50px;
     padding-top: 50px;
 }
-
 .divPadd2{
     padding: 30px;
     padding-left: 0%;
     margin-bottom: -100px;
 }
-
 .txt{
     font-size: 20px;
 }
-
-/* Define the animation */
-@keyframes slideIn {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  .slide-in-div {
-    position: relative;
-    /* Apply the animation */
-    animation: slideIn 1s ease-out;
-  }
-
-  @keyframes slideInFromRight {
-    0% {
-      transform: translateX(100%); /* Start off-screen to the right */
-    }
-    100% {
-      transform: translateX(0); /* End at its original position */
-    }
-  }
-
-  .slide-in-div-from-right {
-    animation: slideInFromRight 2s ease-out;
-  }
-
-  @keyframes appearFromLeft{
-    from{
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-  }
-
-  .block{
-    animation: appearFromLeft linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-  }
-
-  @keyframes appearFromRight{
-    from{
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-  }
-
-  .blockRight{
-    animation: appearFromRight linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-  }
 
 @media (min-width: 320px) and (max-width: 480px) {
     .image{
         height: 230px;
     }
-
     .image2{
         height: 100px;
         padding: 0%;
         padding-left: 5px;
     }
-
     .hero-1{
         padding: 20px 20px 10px 25px;
         margin: 10px 10px 10px 25px;
         font-size: 40px !important;
     }
-
     .hero-2{
         padding: 0%;
         padding-left: 20px;
         padding-bottom: 25px;
     }
-
     .divPadd{
         padding: 0%;
         margin: 0%;
         padding-bottom: 30px;
     }
-
     .padd{
         padding: 20%;
     }
-
     .txt{
         font-size: 15px !important;
         padding: 0%;
