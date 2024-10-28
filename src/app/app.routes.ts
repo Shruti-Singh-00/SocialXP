@@ -16,6 +16,6 @@ export const routes: Routes = [
     {path:"about", component:AboutComponent},
     {path:"details", component: DetailsComponent},
     {path:"test", component: TestComponent},
-    {path: '', redirectTo: '/home', pathMatch: 'full' },
+    // {path: '', redirectTo: '/home', pathMatch: 'full' },
     {path: '**', component: NotFoundComponent}
 ];
